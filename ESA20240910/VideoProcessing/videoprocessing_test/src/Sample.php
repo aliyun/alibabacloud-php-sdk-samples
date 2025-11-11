@@ -237,9 +237,7 @@ class Sample {
     // Init client
     $esa20240910Client = self::createESA20240910Client();
     // Init resource
-    //resource_VideoProcessing_test
     $ratePlanInstRespBody = self::ratePlanInst($esa20240910Client);
-    //resource_Site_VideoProcessing_test
     $siteRespBody = self::site($ratePlanInstRespBody, $esa20240910Client);
     $videoProcRespBody = self::videoProc($siteRespBody, $esa20240910Client);
     // update resource

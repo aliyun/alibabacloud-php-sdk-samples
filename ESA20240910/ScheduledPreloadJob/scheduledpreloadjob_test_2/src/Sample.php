@@ -198,9 +198,7 @@ class Sample {
     // Init client
     $esa20240910Client = self::createESA20240910Client();
     // Init resource
-    //resource_RatePlanInstance_ScheduledPreloadJob_test_2
     $ratePlanInstRespBody = self::ratePlanInst($esa20240910Client);
-    //resource_Site_ScheduledPreloadJob_test_2
     $siteRespBody = self::site($ratePlanInstRespBody, $esa20240910Client);
     $schedPreloadJobRespBody = self::schedPreloadJob($siteRespBody, $esa20240910Client);
     // destroy resource

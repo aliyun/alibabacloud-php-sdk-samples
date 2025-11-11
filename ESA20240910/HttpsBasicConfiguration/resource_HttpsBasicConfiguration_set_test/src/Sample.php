@@ -224,9 +224,7 @@ class Sample {
     // Init client
     $esa20240910Client = self::createESA20240910Client();
     // Init resource
-    //resource_RatePlanInstance_set_test
     $ratePlanInstRespBody = self::ratePlanInst($esa20240910Client);
-    //resource_HttpBasicConfiguration_set_test
     $siteRespBody = self::site($ratePlanInstRespBody, $esa20240910Client);
     $httpsCfgRespBody = self::httpsCfg($siteRespBody, $esa20240910Client);
     // update resource

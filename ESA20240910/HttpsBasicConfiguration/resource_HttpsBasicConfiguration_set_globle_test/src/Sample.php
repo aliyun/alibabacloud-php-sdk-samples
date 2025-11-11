@@ -244,9 +244,7 @@ class Sample {
     // Init client
     $esa20240910Client = self::createESA20240910Client();
     // Init resource
-    //resource_RatePlanInstance_set_globle_test
     $ratePlanInstRespBody = self::ratePlanInst($esa20240910Client);
-    //resource_HttpBasicConfiguration_set_global_test
     $httpBasicConfRespBody = self::httpBasicConf($ratePlanInstRespBody, $esa20240910Client);
     $httpsBasicConfRespBody = self::httpsBasicConf($httpBasicConfRespBody, $esa20240910Client);
     // update resource

@@ -255,9 +255,7 @@ class Sample {
     // Init client
     $esa20240910Client = self::createESA20240910Client();
     // Init resource
-    //resource_RatePlanInstance_ClientCertificate_set_test
     $ratePlanInstCltCertRespBody = self::ratePlanInstCltCert($esa20240910Client);
-    //resource_Site_ClientCerticificate_set_test
     $siteCltCertRespBody = self::siteCltCert($ratePlanInstCltCertRespBody, $esa20240910Client);
     $cltCertRespBody = self::cltCert($siteCltCertRespBody, $esa20240910Client);
     // update resource

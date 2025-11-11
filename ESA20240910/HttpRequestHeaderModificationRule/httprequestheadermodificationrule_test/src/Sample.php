@@ -256,9 +256,7 @@ class Sample {
     // Init client
     $esa20240910Client = self::createESA20240910Client();
     // Init resource
-    //resource_HttpRequestHeaderModificationRule_test
     $ratePlanInstRespBody = self::ratePlanInst($esa20240910Client);
-    //resource_Site_HttpRequestHeaderModificationRule_test
     $siteRespBody = self::site($ratePlanInstRespBody, $esa20240910Client);
     $reqHdrModRuleRespBody = self::reqHdrModRule($siteRespBody, $esa20240910Client);
     // update resource
